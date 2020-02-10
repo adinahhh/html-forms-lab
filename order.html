@@ -31,12 +31,12 @@ and your choice of a hand-picked, premium melon.</p>
 <h2>Order Form</h2>
 
 <form>
-    <label>Your name</label>
-    <input type="text" name="name">
+    <label for = "input-name">Your name</label>
+    <input type="text" name="name" id="input-name">
     <br>
     <br>
-    <label>Who are we sending this to?</label>
-    <input type="text" name="recipient">
+    <label for= "input-recipient">Who are we sending this to?</label>
+    <input type="text" name="recipient" id="input-recipient">
 </form>
 
 <br>
@@ -52,18 +52,21 @@ Choose a melon
 
 <br>
 
-<form>
-    <label>When should we deliver?</label>
-    <input type="radio" name="time" value="am">Morning
-    <input type="radio" name="time" value="pm">Evening
-    <input type="radio" name="time" value="any">Any time
-</form>
+<fieldset>
+    <legend>When should we deliver?</legend>
+    <input type="radio" name="time" value="am">
+    <label for="morning">Morning</label>
+    <input type="radio" name="time" value="pm">
+    <label for="evening">Evening</label>
+    <input type="radio" name="time" value="any">
+    <label for="any time">Any time</label>
+</fieldset>
 
 <br>
 
 <form>
-    <label>Enter your message:</label>
-    <textarea name="message"></textarea>
+    <label for= "input-message">Enter your message:</label>
+    <textarea name="message" id= "input-message"></textarea>
 </form>
 <br>
 
